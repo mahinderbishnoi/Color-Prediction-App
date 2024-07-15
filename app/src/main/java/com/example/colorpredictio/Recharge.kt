@@ -8,6 +8,7 @@ import android.widget.TextView
 import com.shashank.sony.fancytoastlib.FancyToast
 
 class Recharge : AppCompatActivity() {
+    private var mahi=Int
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recharge)
