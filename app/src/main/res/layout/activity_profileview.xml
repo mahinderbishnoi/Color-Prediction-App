@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profileview">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="#099183"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/name"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/mob"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.7"
+            android:text="@string/_9877734929"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/_2900029" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/newborder"
+            android:text="@string/change_nick_name"
+            android:textAllCaps="false"
+            android:textColor="#099183" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/newborder"
+            android:text="@string/change_password"
+            android:textAllCaps="false"
+            android:textColor="#099183" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/info_50" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TableRow
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <ImageView
+
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:alpha="0.8"
+                android:layout_gravity="center"
+                android:src="@drawable/order_50" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="7dp"
+                android:alpha="0.8"
+                android:paddingStart="15dp"
+                android:text="@string/order_record"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:alpha="0.8"
+                android:src="@drawable/rupee_64" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="7dp"
+                android:alpha="0.8"
+                android:paddingStart="15dp"
+                android:text="@string/financial_details"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:background="#C8C8C8" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:alpha="0.8"
+                android:src="@drawable/download_64" />
+
+            <TextView
+                android:layout_weight="2"
+                android:padding="7dp"
+
+                android:alpha="0.8"
+                android:paddingStart="15dp"
+                android:text="@string/download"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/telegram_50"
+                android:alpha="0.8"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_weight="2"
+                android:padding="7dp"
+                android:alpha="0.8"
+                android:paddingStart="15dp"
+                android:text="@string/follow_us"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/question_mark_48"
+                android:alpha="0.8"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_weight="2"
+                android:alpha="0.8"
+                android:padding="7dp"
+                android:paddingStart="15dp"
+                android:text="@string/support"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/helpdesk_50"
+                android:alpha="0.8"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_weight="2"
+                android:padding="7dp"
+                android:alpha="0.8"
+                android:paddingStart="15dp"
+                android:text="@string/complaint"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:alpha="0.8"
+        android:layout_marginTop="5dp"
+        android:background="#C8C8C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha="0.8"
+        android:background="@drawable/underline"
+        android:gravity="center|bottom"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton22"
+        app:layout_constraintVertical_bias="0.863">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:alpha="0.5"
+            android:background="@drawable/home_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:alpha="0.5"
+            android:text="@string/home"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:alpha="0.5"
+            android:background="@drawable/search_50"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:alpha="0.5"
+            android:text="@string/search"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:alpha="0.5"
+            android:background="@drawable/baseline_account_balance_wallet_24"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:alpha="0.5"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/recharge"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/profile24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tect56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:text="@string/my"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
