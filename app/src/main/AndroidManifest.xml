@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ColorPredictio"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".cricket"
+            android:exported="false" />
+        <activity
             android:name=".Signup"
             android:exported="false" />
         <activity

@@ -12,6 +12,7 @@ class Recharge : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recharge)
+
         var rec=findViewById<ImageView>(R.id.imageView7)
         rec.setOnClickListener{
             var intent= Intent(this@Recharge,Homepage::class.java)
